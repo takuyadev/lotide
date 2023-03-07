@@ -1,4 +1,4 @@
-export const assertEqual = function(actual, expected) {
+const assertEqual = function(actual, expected) {
   let message = "Error producing assertion";
 
   if (actual === expected) {
