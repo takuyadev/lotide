@@ -55,6 +55,7 @@ const lettersPositions = function (word) {
 
 const hello = lettersPositions("lighthouse in the house");
 
+// Object to test against
 const helloTestObj = {
   l: [0],
   i: [1, 11],
@@ -68,6 +69,7 @@ const helloTestObj = {
   n: [12],
 };
 
+// Test comparing against outputed result and test
 for (const key in hello) {
   assertArraysEqual(hello[key], helloTestObj[key]);
 }
