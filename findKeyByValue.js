@@ -29,7 +29,7 @@ const findKeyByValue = function (obj, search) {
     }
   }
 
-  return "Error: No match."
+  return undefined
 };
 
 const bestTVShowsByGenre = {
