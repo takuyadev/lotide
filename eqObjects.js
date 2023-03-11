@@ -1,7 +1,11 @@
 // Test Variables
 const shirtObject = { color: "red", size: "medium" };
-const anotherShirtObject= { size: "medium", color: "red" };
-const longSleeveShirtObject= { size: "medium", color: "red", sleeveLength: "long" };
+const anotherShirtObject = { size: "medium", color: "red" };
+const longSleeveShirtObject = {
+  size: "medium",
+  color: "red",
+  sleeveLength: "long",
+};
 const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
 const anotherMultiColorShirtObject = {
   size: "medium",
@@ -62,9 +66,14 @@ const eqObjects = function (object1, object2) {
     if (Array.isArray(object1[key])) {
       //If it is, check for equality for the currently selected array
       if (!eqArrays(object1[key], object2[key])) {
-        return false;
+        continue;
       }
-      continue;
+    }
+
+    if (typeof object1[key] === "object") {
+      if (eqObjects(object1[key], object2[key])) {
+        continue
+      }
     }
 
     // If object1 value is not equal to object2 value, return false
@@ -76,16 +85,23 @@ const eqObjects = function (object1, object2) {
   return true;
 };
 
-// assertEqual(eqObjects(shirtObject , anotherShirtObject), false); // => true
+assertEqual(eqObjects(shirtObject , anotherShirtObject), false); // => true
 
-// assertEqual(eqObjects(shirtObject , longSleeveShirtObject), false); // => false
+assertEqual(eqObjects(shirtObject , longSleeveShirtObject), false); // => false
 
 assertEqual(
   eqObjects(multiColorShirtObject, anotherMultiColorShirtObject),
   true
 ); // => true
-
 assertEqual(
   eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject),
   false
 ); // => false
+
+
+assertEqual(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), true); // => true
+assertEqual(
+  eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }),
+  false
+);
+assertEqual(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 }), false);
