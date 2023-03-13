@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@takuyadev/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Library that allows you to modify, test and return values based on given value.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -20,7 +20,7 @@
     "url": "git+https://github.com/takuyadev/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "takuyadev",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/takuyadev/lotide/issues"
