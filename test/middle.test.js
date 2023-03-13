@@ -1,6 +1,6 @@
 const chai = require("chai");
 const { assert, expect } = chai;
-const middle = require("../middle");
+const { middle } = require("../index");
 
 describe("eqArrays()", () => {
   it("should return [3] when passed [0, 1, 2, 3, 4, 5, 6]", () => {

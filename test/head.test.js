@@ -1,5 +1,5 @@
 const chai = require("chai");
-const head = require("../head");
+const {head} = require("../index");
 
 const { assert } = chai;
 

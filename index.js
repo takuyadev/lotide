@@ -14,7 +14,6 @@ const findKeyByValue = require("./findKeyByValue");
 const flatten = require("./flatten");
 const lettersPosition = require("./lettersPositions");
 const map = require("./map");
-const middle = require("./middle");
 const takeUntil = require("./takeUntil");
 const without = require("./without");
 

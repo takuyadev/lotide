@@ -1,6 +1,6 @@
 const chai = require("chai");
 const { expect, assert } = chai;
-const tail = require("../tail");
+const { tail } = require("../index");
 
 describe("tail.js", () => {
   it("should return ['Labs'] when passed ['Hello', 'Lighthouse', 'Labs']", () => {
