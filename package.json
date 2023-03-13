@@ -1,8 +1,8 @@
 {
   "name": "@takuyadev/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library that allows you to modify, test and return values based on given value.",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
