@@ -1,4 +1,3 @@
-
 // Flatten function
 const flatten = (arr) => {
   // Copy array to prevent mutation of original layer with slice
@@ -10,9 +9,8 @@ const flatten = (arr) => {
 
     // If it is an array, loop through and push
     if (isArray) {
-
-      // Use recursion to 
-      acc = [...acc, ...flatten(curr)]
+      // Use recursion to
+      acc = [...acc, ...flatten(curr)];
     }
 
     // If not, then just push current value as is
@@ -25,5 +23,4 @@ const flatten = (arr) => {
   }, []);
 };
 
-
-module.exports = flatten
+module.exports = flatten;

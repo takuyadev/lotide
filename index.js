@@ -1,21 +1,21 @@
 // index.js
-const head = require("./head");
-const tail = require("./tail");
-const middle = require("./middle");
-const assertArraysEqual = require("./assertArraysEqual");
-const assertEqual = require("./assertEqual");
-const assertObjectsEqual = require("./assertObjectsEqual");
-const countLetters = require("./countLetters");
-const countOnly = require("./countOnly");
-const eqArrays = require("./eqArrays");
-const eqObjects = require("./eqObjects");
-const findKey = require("./findKey");
-const findKeyByValue = require("./findKeyByValue");
-const flatten = require("./flatten");
-const lettersPosition = require("./lettersPositions");
-const map = require("./map");
-const takeUntil = require("./takeUntil");
-const without = require("./without");
+const head = require("./utils/head");
+const tail = require("./utils/tail");
+const middle = require("./utils/middle");
+const assertArraysEqual = require("./utils/assertArraysEqual");
+const assertEqual = require("./utils/assertEqual");
+const assertObjectsEqual = require("./utils/assertObjectsEqual");
+const countLetters = require("./utils/countLetters");
+const countOnly = require("./utils/countOnly");
+const eqArrays = require("./utils/eqArrays");
+const eqObjects = require("./utils/eqObjects");
+const findKey = require("./utils/findKey");
+const findKeyByValue = require("./utils/findKeyByValue");
+const flatten = require("./utils/flatten");
+const lettersPosition = require("./utils/lettersPositions");
+const map = require("./utils/map");
+const takeUntil = require("./utils/takeUntil");
+const without = require("./utils/without");
 
 module.exports = {
   head,

@@ -3,7 +3,7 @@ const {head} = require("../index");
 
 const { assert } = chai;
 
-describe("#head", () => {
+describe("head()", () => {
   it("returns 1 for [1, 2, 3]", () => {
     assert.strictEqual(head([1, 2, 3]), 1);
   });

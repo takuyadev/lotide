@@ -13,7 +13,7 @@ const tail = function (arr) {
   if (arr.length === 1) {
     return arr;
   }
-  
+
   // Spreading operator copies the array, and thus will not modify existing array
   // Skip the first index, spread the rest onto tail variable
   const [, ...tail] = arr;
